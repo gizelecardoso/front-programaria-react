@@ -14,7 +14,7 @@ export function Content() {
   const [citacao, setCitacao] = useState('')
   const [imagem, setImagem] = useState('')
   const [success, setSuccess] = useState(false)
-  const baseURL = 'https://back-end-6c7c.onrender.com/mulheres'
+  const baseURL = 'https://backend-node-programaria.onrender.com'
 
   useEffect(() => {
     async function getData() {
@@ -96,26 +96,26 @@ export function Content() {
       <div >
         <h2 className={styles.projectsTitle}>Cadastre uma rainha tech:</h2>
         <form  className={styles.form} onSubmit={handleCreateMessage}>
-          <input 
-            onChange={handleInputValueNome} 
+          <input
+            onChange={handleInputValueNome}
             placeholder="Digite o nome"
             value={nome}
             className={styles.formInput}
           />
-          <textarea 
-            onChange={handleInputValueImagem} 
+          <textarea
+            onChange={handleInputValueImagem}
             placeholder="Digite o link da imagem"
             value={imagem}
             className={styles.formTextArea}
           />
-          <textarea 
-            onChange={handleInputValueminibio} 
+          <textarea
+            onChange={handleInputValueminibio}
             placeholder="Digite a minibiografia"
             value={minibio}
             className={styles.formTextArea}
           />
-          <textarea 
-            onChange={handleInputValueCitacao} 
+          <textarea
+            onChange={handleInputValueCitacao}
             placeholder="Digite a citação"
             value={citacao}
             className={styles.formTextArea}
